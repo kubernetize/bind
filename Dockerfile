@@ -7,6 +7,7 @@ RUN \
     adduser -G named -D -H -u 15353 named && \
     apk --no-cache add bind bind-dnssec-tools libcap && \
     setcap cap_net_bind_service+ep /usr/sbin/named && \
+    apk --no-cache del libcap && \
     chown -R named:named /etc/bind
 
 USER 15353
