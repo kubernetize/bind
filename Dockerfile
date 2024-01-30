@@ -1,4 +1,4 @@
-FROM ghcr.io/kubernetize/alpine-service-base:3.18.0
+FROM ghcr.io/kubernetize/alpine-service-base:3.19.1
 
 LABEL maintainer="Richard Kojedzinszky <richard@kojedz.in>"
 
